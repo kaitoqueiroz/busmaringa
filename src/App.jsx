@@ -8,7 +8,7 @@ import 'typeface-roboto';
 class App extends Component {
   render() {
     return (
-      <Router>
+      <Router basename={process.env.PUBLIC_URL}>
         <div className="App">
           <Route exact path="/" component={MainMenu}/>
           <Route path="/app" component={MainBody}/>

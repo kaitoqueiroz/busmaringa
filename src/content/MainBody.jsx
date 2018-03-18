@@ -18,7 +18,7 @@ class MainBody extends Component {
   render() {
     return(
       <div>
-        <Router>
+        <Router basename={process.env.PUBLIC_URL}>
           <div>
             <Route render={(props) => (
               <MenuAppBar {...props} data={this.state}/>
