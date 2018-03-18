@@ -1,0 +1,9 @@
+[
+	{
+		"nomeMenu": "Cidade Canção",
+		"route": "/app/principal/777"
+	},{
+		"nomeMenu": "Cidade Verde",
+		"route": "/app/principal/778"
+	}
+]

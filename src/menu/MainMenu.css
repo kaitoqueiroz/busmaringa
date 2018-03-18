@@ -1,0 +1,16 @@
+.main-menu-container .main-menu-button {
+  width: 100%;
+  margin: 0 0 10px 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+button.green-button {
+	background-color: #40B540;
+}
+
+.main-menu-button.green-button:hover {
+	background-color: #30A14C;
+}
