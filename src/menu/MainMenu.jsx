@@ -3,6 +3,7 @@ import Button from 'material-ui/Button';
 import PropTypes from 'prop-types';
 import { withStyles } from 'material-ui/styles'
 import { Link } from 'react-router-dom';
+import logo from '../img/Screen.png';
 import './MainMenu.css';
 
 function MainMenu(props) {
@@ -11,7 +12,7 @@ function MainMenu(props) {
   const greenButtonClasses = classes.button + ' main-menu-button green-button';
   return (
     <div className="main-menu-container">
-      <img className={classes.img} src="/img/Screen.png" alt="Logo" />
+      <img className={classes.img} src={logo} alt="Logo" />
       <Link to="/app/principal/777">
         <Button variant="raised" color="primary" className={buttonClasses}>Cidade Canção</Button>
       </Link>
