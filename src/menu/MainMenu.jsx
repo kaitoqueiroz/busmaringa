@@ -5,7 +5,6 @@ import Button from 'material-ui/Button';
 import { withStyles } from 'material-ui/styles'
 import { MuiThemeProvider, createMuiTheme } from 'material-ui/styles';
 import logo from '../img/Screen.png';
-import './MainMenu.css';
 
 const styles = theme => ({
   root: {
