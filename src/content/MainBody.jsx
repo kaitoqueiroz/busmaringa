@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
+import Headroom from 'react-headroom';
 import Principal from './../principal/Principal.jsx';
 import MenuAppBar from './../menu/MenuAppBar.jsx';
 import Horarios from './../horarios/Horarios.jsx';
@@ -21,7 +22,9 @@ class MainBody extends Component {
         <Router basename={process.env.PUBLIC_URL}>
           <div>
             <Route render={(props) => (
-              <MenuAppBar {...props} data={this.state}/>
+              <Headroom>
+                <MenuAppBar {...props} data={this.state}/>
+              </Headroom>
             )}/>
             <Route path="/app/principal/:id" render={(props) => (
               <Principal {...props} changeTitle={this.handleChangeTitle}/>

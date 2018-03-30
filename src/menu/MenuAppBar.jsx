@@ -12,9 +12,6 @@ import Slider from './../animations/Slider.jsx';
 import itensMenu from './ItensMenu.json';
 
 const styles = {
-  root: {
-    width: '100%',
-  },
   flex: {
     flex: 1,
   },
@@ -58,7 +55,7 @@ class MenuAppBar extends Component {
   render() {
     const { classes } = this.props;
     return (
-      <div className={classes.root}>
+      <div>
         <AppBar position="static">
           <Toolbar>
             <IconButton className={classes.backButton} color="inherit" aria-label="Back" onClick={this.props.history.goBack}>
