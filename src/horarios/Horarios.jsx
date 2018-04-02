@@ -20,6 +20,8 @@ function TabContainer({ children, dir }) {
 
 const styles = theme => ({
   container: {
+    height: 'calc(100vh - 50px)',
+    overflow: 'auto',
   },
   hidden: {
     display: 'none'
@@ -119,15 +121,19 @@ class Horarios extends Component {
                   <TableRow>
                     <TableCell colSpan="2">{horarios.routeName}: {horarios.trips[this.state.trajeto].tripDesc}</TableCell>
                   </TableRow>
-                  <TableRow>
-                    <TableCell colSpan="2" className={classes.centered}>
-                      <Link to={'/app/itinerario/'+this.state.ciaID+'/'+this.state.linha+'/'+this.state.trajeto}>
-                        <Button disabled={!this.state.linha} variant="raised" color="secondary">
-                          Itinerário
-                        </Button>
-                      </Link>
-                    </TableCell>
-                  </TableRow>
+                  {
+                    (this.state.ciaID !== 'metropolitano') ?
+                    <TableRow>
+                      <TableCell colSpan="2" className={classes.centered}>
+                        <Link to={'/app/itinerario/'+this.state.ciaID+'/'+this.state.linha+'/'+this.state.trajeto}>
+                          <Button disabled={!this.state.linha} variant="raised" color="secondary">
+                            Itinerário
+                          </Button>
+                        </Link>
+                      </TableCell>
+                    </TableRow>
+                    : null
+                  }
                 </TableHead>
                 <TableBody>
                   {this.state.diaUtil.map((n,i) => {
@@ -149,15 +155,19 @@ class Horarios extends Component {
                   <TableRow>
                     <TableCell colSpan="2">{horarios.routeName}: {horarios.trips[this.state.trajeto].tripDesc}</TableCell>
                   </TableRow>
-                  <TableRow>
-                    <TableCell colSpan="2" className={classes.centered}>
-                      <Link to={'/app/itinerario/'+this.state.ciaID+'/'+this.state.linha+'/'+this.state.trajeto}>
-                        <Button disabled={!this.state.linha} variant="raised" color="secondary">
-                          Itinerário
-                        </Button>
-                      </Link>
-                    </TableCell>
-                  </TableRow>
+                  {
+                    (this.state.ciaID !== 'metropolitano') ?
+                    <TableRow>
+                      <TableCell colSpan="2" className={classes.centered}>
+                        <Link to={'/app/itinerario/'+this.state.ciaID+'/'+this.state.linha+'/'+this.state.trajeto}>
+                          <Button disabled={!this.state.linha} variant="raised" color="secondary">
+                            Itinerário
+                          </Button>
+                        </Link>
+                      </TableCell>
+                    </TableRow>
+                  : null
+                }
                 </TableHead>
                 <TableBody>
                   {this.state.sabado.map((n,i) => {
@@ -179,15 +189,19 @@ class Horarios extends Component {
                   <TableRow>
                     <TableCell colSpan="2">{horarios.routeName}: {horarios.trips[this.state.trajeto].tripDesc}</TableCell>
                   </TableRow>
-                  <TableRow>
-                    <TableCell colSpan="2" className={classes.centered}>
-                      <Link to={'/app/itinerario/'+this.state.ciaID+'/'+this.state.linha+'/'+this.state.trajeto}>
-                        <Button disabled={!this.state.linha} variant="raised" color="secondary">
-                          Itinerário
-                        </Button>
-                      </Link>
-                    </TableCell>
-                  </TableRow>
+                  {
+                    (this.state.ciaID !== 'metropolitano') ?
+                    <TableRow>
+                      <TableCell colSpan="2" className={classes.centered}>
+                        <Link to={'/app/itinerario/'+this.state.ciaID+'/'+this.state.linha+'/'+this.state.trajeto}>
+                          <Button disabled={!this.state.linha} variant="raised" color="secondary">
+                            Itinerário
+                          </Button>
+                        </Link>
+                      </TableCell>
+                    </TableRow>
+                    : null
+                  }
                 </TableHead>
                 <TableBody>
                   {this.state.domingo.map((n,i) => {

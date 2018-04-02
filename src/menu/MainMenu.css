@@ -14,3 +14,13 @@ button.green-button {
 .main-menu-button.green-button:hover {
 	background-color: #30A14C;
 }
+
+
+button.yellow-button {
+	background-color: gold;
+	color: #000
+}
+
+.main-menu-button.yellow-button:hover {
+	background-color: goldenrod;
+}

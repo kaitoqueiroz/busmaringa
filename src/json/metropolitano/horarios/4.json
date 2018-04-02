@@ -1,0 +1,68 @@
+{
+	"routeName": "BELA VISTA DO PARAÍSO - PORECATU",
+	"routeDesc": null,
+	"directions": [{
+		"directionId": 0,
+		"directionDesc": "Ida",
+		"calendars": [{
+			"serviceId": 1073,
+			"serviceDesc": "Dias Úteis",
+			"departures": [{"departure": "06:00","tripSeq": 1},
+{"departure": "08:30","tripSeq": 1},
+{"departure": "13:30","tripSeq": 1},
+{"departure": "19:25","tripSeq": 1}]
+		}, {
+			"serviceId": 1079,
+			"serviceDesc": "Sábados",
+			"departures": [{"departure": "06:00","tripSeq": 1},
+{"departure": "08:30","tripSeq": 1},
+{"departure": "15:00","tripSeq": 1},
+{"departure": "19:25","tripSeq": 1}]
+		}, {
+			"serviceId": 1072,
+			"serviceDesc": "Domingos/Feriados",
+			"departures": [{"departure": "06:00","tripSeq": 1},
+{"departure": "08:30","tripSeq": 1},
+{"departure": "15:00","tripSeq": 1},
+{"departure": "19:45","tripSeq": 1}]
+		}]
+	}, {
+		"directionId": 1,
+		"directionDesc": "Volta",
+		"calendars": [{
+			"serviceId": 1073,
+			"serviceDesc": "Dias Úteis",
+			"departures": [{"departure": "06:05","tripSeq": 1},
+{"departure": "06:00","tripSeq": 2},
+{"departure": "12:00","tripSeq": 2},
+{"departure": "17:45","tripSeq": 2}]
+		}, {
+			"serviceId": 1079,
+			"serviceDesc": "Sábados",
+			"departures": [{"departure": "06:05","tripSeq": 1},
+{"departure": "06:00","tripSeq": 2},
+{"departure": "13:30","tripSeq": 2},
+{"departure": "17:45","tripSeq": 2}]
+		}, {
+			"serviceId": 1072,
+			"serviceDesc": "Domingos/Feriados",
+			"departures": [{"departure": "06:05","tripSeq": 1},
+{"departure": "07:00","tripSeq": 2},
+{"departure": "13:30","tripSeq": 2},
+{"departure": "17:45","tripSeq": 2}]
+		}]
+	}],
+	"trips": [{
+		"tripDesc": "BELA VISTA DO PARAÍSO - PORECATU",
+		"tripShortName": null,
+		"directionId": 1,
+		"tripSeq": 2
+	}, {
+		"tripDesc": "PORECATU - BELA VISTA DO PARAÍSO",
+		"tripShortName": null,
+		"directionId": 0,
+		"tripSeq": 1
+	}],
+	"routes": null,
+	"note": null
+}

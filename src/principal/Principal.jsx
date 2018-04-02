@@ -12,6 +12,8 @@ import Paper from 'material-ui/Paper';
 const styles = theme => ({
   container: {
     padding: '20px',
+    height: 'calc(100vh - 110px)',
+    overflow: 'auto',
   },
   formControl: {
     width: '100%',
@@ -39,6 +41,7 @@ class Principal extends Component {
     };
     this.ciaID = props.match.params.id;
     this.linhas = require('../json/'+this.ciaID+'/linhas.json');
+    console.log(this.linhas);
   }
   handleLinhaChange = event => {
     horarios = require('../json/'+this.ciaID+'/horarios/'+event.target.value+'.json');
