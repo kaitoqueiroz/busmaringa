@@ -151,13 +151,13 @@
 	"trips": [{
 		"tripDesc": "ARAPONGAS -ASTORGA",
 		"tripShortName": null,
-		"directionId": 1,
-		"tripSeq": 2
+		"directionId": 0,
+		"tripSeq": 1
 	}, {
 		"tripDesc": "ASTORGA - ARAPONGAS",
 		"tripShortName": null,
-		"directionId": 0,
-		"tripSeq": 1
+		"directionId": 1,
+		"tripSeq": 2
 	}],
 	"routes": null,
 	"note": null

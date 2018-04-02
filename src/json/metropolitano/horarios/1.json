@@ -511,13 +511,13 @@
 	"trips": [{
 		"tripDesc": "APUCARANA - MANDAGUARI",
 		"tripShortName": null,
-		"directionId": 1,
-		"tripSeq": 2
+		"directionId": 0,
+		"tripSeq": 1
 	}, {
 		"tripDesc": "MANDAGUARI - APUCARANA",
 		"tripShortName": null,
-		"directionId": 0,
-		"tripSeq": 1
+		"directionId": 1,
+		"tripSeq": 2
 	}],
 	"routes": null,
 	"note": null

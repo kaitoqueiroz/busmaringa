@@ -1,0 +1,48 @@
+{
+	"routeName": "LONDRINA - ASSAÍ",
+	"routeDesc": null,
+	"directions": [{
+		"directionId": 0,
+		"directionDesc": "Ida",
+		"calendars": [{
+			"serviceId": 1073,
+			"serviceDesc": "Dias Úteis",
+			"departures": [
+{"departure": "18:15","tripSeq": 1}]
+		}, {
+			"serviceId": 1079,
+			"serviceDesc": "Sábados",
+			"departures": [
+{"departure": "12:00","tripSeq": 1},
+{"departure": "17:50","tripSeq": 1}]
+		}]
+	}, {
+		"directionId": 1,
+		"directionDesc": "Volta",
+		"calendars": [{
+			"serviceId": 1073,
+			"serviceDesc": "Dias Úteis",
+			"departures": [
+{"departure": "06:00","tripSeq": 2}]
+		}, {
+			"serviceId": 1079,
+			"serviceDesc": "Sábados",
+			"departures": [
+{"departure": "07:00","tripSeq": 2},
+{"departure": "13:30","tripSeq": 2}]
+		}]
+	}],
+	"trips": [{
+		"tripDesc": "LONDRINA - ASSAÍ",
+		"tripShortName": null,
+		"directionId": 0,
+		"tripSeq": 1
+	}, {
+		"tripDesc": "ASSAÍ - LONDRINA",
+		"tripShortName": null,
+		"directionId": 1,
+		"tripSeq": 2
+	}],
+	"routes": null,
+	"note": null
+}
