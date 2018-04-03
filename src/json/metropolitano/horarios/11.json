@@ -2,7 +2,7 @@
 	"routeName": "MANDAGUARI - MARINGÁ",
 	"routeDesc": null,
 	"directions": [{
-		"directionId": 0,
+		"directionId": 1,
 		"directionDesc": "Ida",
 		"calendars": [{
 			"serviceId": 1073,

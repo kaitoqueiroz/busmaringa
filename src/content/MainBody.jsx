@@ -5,6 +5,9 @@ import Principal from './../principal/Principal.jsx';
 import MenuAppBar from './../menu/MenuAppBar.jsx';
 import Horarios from './../horarios/Horarios.jsx';
 import Itinerario from './../itinerario/Itinerario.jsx';
+import ReactGA from 'react-ga';
+ReactGA.initialize('UA-58340218-1');
+ReactGA.pageview(window.location.pathname + window.location.search);
 
 class MainBody extends Component {
   constructor(props) {
@@ -15,6 +18,8 @@ class MainBody extends Component {
   }
   handleChangeTitle = (title) => {
     this.setState({title: title});
+
+    ReactGA.pageview(window.location.pathname + window.location.search);
   }
   render() {
     return(

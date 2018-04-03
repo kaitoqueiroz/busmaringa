@@ -44,7 +44,6 @@ class Principal extends Component {
     };
     this.ciaID = props.match.params.id;
     this.linhas = require('../json/'+this.ciaID+'/linhas.json');
-    console.log(this.linhas);
   }
   handleLinhaChange = event => {
     horarios = require('../json/'+this.ciaID+'/horarios/'+event.target.value+'.json');
