@@ -3,8 +3,9 @@ import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import Button from 'material-ui/Button';
 import { withStyles } from 'material-ui/styles'
-import { MuiThemeProvider, createMuiTheme } from 'material-ui/styles';
 import logo from '../img/Screen.png';
+import GreenTheme from './../themes/GreenTheme.jsx';
+import GoldenTheme from './../themes/GoldenTheme.jsx';
 
 const styles = theme => ({
   root: {
@@ -22,16 +23,6 @@ const styles = theme => ({
   },
 });
 
-const greenTheme = createMuiTheme({
-  palette: {
-    primary: {
-      main: '#40B540',
-      dark: '#30A14C',
-      contrastText: '#FFFFFF',
-    },
-  },
-});
-
 function MainMenu(props) {
   const { classes } = props;
   return (
@@ -41,9 +32,14 @@ function MainMenu(props) {
         <Button variant="raised" color="primary" className={classes.button} fullWidth>Cidade Canção</Button>
       </Link>
       <Link to="/app/principal/778" className={classes.link}>
-        <MuiThemeProvider theme={greenTheme}>
+        <GreenTheme>
           <Button variant="raised" color="primary" className={classes.button} fullWidth>Cidade Verde</Button>
-        </MuiThemeProvider>
+        </GreenTheme>
+      </Link>
+      <Link to="/app/principal/metropolitano" className={classes.link}>
+        <GoldenTheme>
+          <Button variant="raised" color="primary" className={classes.button} fullWidth>Metropolitano</Button>
+        </GoldenTheme>
       </Link>
     </div>
   );

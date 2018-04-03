@@ -1,0 +1,46 @@
+{
+	"routeName": "LONDRINA - SÃO SEBASTIÃO DA AMOREIRA",
+	"routeDesc": null,
+	"directions": [{
+		"directionId": 0,
+		"directionDesc": "Ida",
+		"calendars": [{
+			"serviceId": 1073,
+			"serviceDesc": "Dias Úteis",
+			"departures": [
+{"departure": "18:35","tripSeq": 1}]
+		}, {
+			"serviceId": 1079,
+			"serviceDesc": "Sábados",
+			"departures": [
+{"departure": "15:00","tripSeq": 1}]
+		}]
+	}, {
+		"directionId": 1,
+		"directionDesc": "Volta",
+		"calendars": [{
+			"serviceId": 1073,
+			"serviceDesc": "Dias Úteis",
+			"departures": [
+{"departure": "05:30","tripSeq": 2}]
+		}, {
+			"serviceId": 1079,
+			"serviceDesc": "Sábados",
+			"departures": [
+{"departure": "05:30","tripSeq": 2}]
+		}]
+	}],
+	"trips": [{
+		"tripDesc": "LONDRINA - SÃO SEBASTIÃO DA AMOREIRA",
+		"tripShortName": null,
+		"directionId": 0,
+		"tripSeq": 1
+	}, {
+		"tripDesc": "SÃO SEBASTIÃO DA AMOREIRA - LONDRINA",
+		"tripShortName": null,
+		"directionId": 1,
+		"tripSeq": 2
+	}],
+	"routes": null,
+	"note": null
+}

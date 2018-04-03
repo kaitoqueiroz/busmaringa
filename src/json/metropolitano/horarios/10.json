@@ -1,0 +1,81 @@
+{
+	"routeName": "LONDRINA - SERTANÓPOLIS",
+	"routeDesc": null,
+	"directions": [{
+		"directionId": 0,
+		"directionDesc": "Ida",
+		"calendars": [{
+			"serviceId": 1073,
+			"serviceDesc": "Dias Úteis",
+			"departures": [
+{"departure": "06:40","tripSeq": 1},
+{"departure": "10:50","tripSeq": 1},
+{"departure": "14:30","tripSeq": 1},
+{"departure": "17:00","tripSeq": 1},
+{"departure": "18:30","tripSeq": 1}
+		]}, {
+			"serviceId": 1079,
+			"serviceDesc": "Sábados",
+			"departures": [
+{"departure": "06:40","tripSeq": 1},
+{"departure": "10:50","tripSeq": 1},
+{"departure": "14:30","tripSeq": 1},
+{"departure": "17:00","tripSeq": 1},
+{"departure": "18:30","tripSeq": 1}
+
+		]}, {
+			"serviceId": 1072,
+			"serviceDesc": "Domingos/Feriados",
+			"departures": [
+{"departure": "06:45","tripSeq": 1},
+{"departure": "11:00","tripSeq": 1},
+{"departure": "15:00","tripSeq": 1},
+{"departure": "18:30","tripSeq": 1}
+		]}
+	]}, {
+		"directionId": 1,
+		"directionDesc": "Volta",
+		"calendars": [{
+			"serviceId": 1073,
+			"serviceDesc": "Dias Úteis",
+			"departures": [
+{"departure": "06:45","tripSeq": 2},
+{"departure": "07:40","tripSeq": 2},
+{"departure": "12:15","tripSeq": 2},
+{"departure": "16:00","tripSeq": 2},
+{"departure": "16:00","tripSeq": 2},
+{"departure": "19:30","tripSeq": 2}
+	]}, {
+			"serviceId": 1079,
+			"serviceDesc": "Sábados",
+			"departures": [
+{"departure": "06:45","tripSeq": 2},
+{"departure": "07:40","tripSeq": 2},
+{"departure": "12:15","tripSeq": 2},
+{"departure": "16:00","tripSeq": 2},
+{"departure": "16:00","tripSeq": 2},
+{"departure": "19:30","tripSeq": 2}
+		]}, {
+			"serviceId": 1072,
+			"serviceDesc": "Domingos/Feriados",
+			"departures": [
+{"departure": "07:45","tripSeq": 2},
+{"departure": "12:15","tripSeq": 2},
+{"departure": "16:00","tripSeq": 2}
+	]}
+	]
+	}],
+	"trips": [{
+		"tripDesc": "LONDRINA - SERTANÓPOLIS",
+		"tripShortName": null,
+		"directionId": 0,
+		"tripSeq": 1
+	}, {
+		"tripDesc": "SERTANÓPOLIS - LONDRINA",
+		"tripShortName": null,
+		"directionId": 1,
+		"tripSeq": 2
+	}],
+	"routes": null,
+	"note": null
+}

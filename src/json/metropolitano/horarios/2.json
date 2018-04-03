@@ -1,0 +1,164 @@
+{
+	"routeName": "ARAPONGAS -ASTORGA",
+	"routeDesc": null,
+	"directions": [{
+		"directionId": 0,
+		"directionDesc": "Ida",
+		"calendars": [{
+			"serviceId": 1073,
+			"serviceDesc": "Dias Úteis",
+			"departures": [{
+				"departure": "07:00",
+				"tripSeq": 1
+			},
+			{
+				"departure": "11:30",
+				"tripSeq": 1
+			},
+			{
+				"departure": "14:10",
+				"tripSeq": 1
+			},
+			{
+				"departure": "16:50",
+				"tripSeq": 1
+			},
+			{
+				"departure": "19:15",
+				"tripSeq": 1
+			}]
+		}, {
+			"serviceId": 1079,
+			"serviceDesc": "Sábados",
+			"departures": [{
+				"departure": "07:00",
+				"tripSeq": 1
+			},
+			{
+				"departure": "11:30",
+				"tripSeq": 1
+			},
+			{
+				"departure": "14:10",
+				"tripSeq": 1
+			},
+			{
+				"departure": "16:50",
+				"tripSeq": 1
+			},
+			{
+				"departure": "19:15",
+				"tripSeq": 1
+			}]
+		}, {
+			"serviceId": 1072,
+			"serviceDesc": "Domingos/Feriados",
+			"departures": [{
+				"departure": "07:00",
+				"tripSeq": 1
+			},
+			{
+				"departure": "11:30",
+				"tripSeq": 1
+			},
+			{
+				"departure": "14:10",
+				"tripSeq": 1
+			},
+			{
+				"departure": "16:50",
+				"tripSeq": 1
+			},
+			{
+				"departure": "19:15",
+				"tripSeq": 1
+			}]
+		}]
+	}, {
+		"directionId": 1,
+		"directionDesc": "Volta",
+		"calendars": [{
+			"serviceId": 1073,
+			"serviceDesc": "Dias Úteis",
+			"departures": [{
+				"departure": "05:45",
+				"tripSeq": 2
+			},
+			{
+				"departure": "10:00",
+				"tripSeq": 2
+			},
+			{
+				"departure": "12:50",
+				"tripSeq": 2
+			},
+			{
+				"departure": "15:30",
+				"tripSeq": 2
+			},
+			{
+				"departure": "18:00",
+				"tripSeq": 2
+			}]
+		}, {
+			"serviceId": 1079,
+			"serviceDesc": "Sábados",
+			"departures": [{
+				"departure": "05:45",
+				"tripSeq": 2
+			},
+			{
+				"departure": "10:00",
+				"tripSeq": 2
+			},
+			{
+				"departure": "12:50",
+				"tripSeq": 2
+			},
+			{
+				"departure": "15:30",
+				"tripSeq": 2
+			},
+			{
+				"departure": "18:00",
+				"tripSeq": 2
+			}]
+		}, {
+			"serviceId": 1072,
+			"serviceDesc": "Domingos/Feriados",
+			"departures": [{
+				"departure": "05:45",
+				"tripSeq": 2
+			},
+			{
+				"departure": "10:00",
+				"tripSeq": 2
+			},
+			{
+				"departure": "12:50",
+				"tripSeq": 2
+			},
+			{
+				"departure": "15:30",
+				"tripSeq": 2
+			},
+			{
+				"departure": "18:00",
+				"tripSeq": 2
+			}]
+		}]
+	}],
+	"trips": [{
+		"tripDesc": "ARAPONGAS -ASTORGA",
+		"tripShortName": null,
+		"directionId": 0,
+		"tripSeq": 1
+	}, {
+		"tripDesc": "ASTORGA - ARAPONGAS",
+		"tripShortName": null,
+		"directionId": 1,
+		"tripSeq": 2
+	}],
+	"routes": null,
+	"note": null
+}
