@@ -38,6 +38,9 @@ const styles = theme => ({
       background: '#eee'
     }
   },
+  link: {
+    textDecoration: 'none',
+  },
 });
 
 var horarios = [];
@@ -67,7 +70,7 @@ class Horarios extends Component {
           diaUtil = obj.departures.filter(o => o.tripSeq === parseInt(trip.tripSeq, 10));
       }
     });
-    
+
     this.state = {
       ciaID: params.ciaID,
       linha: params.linha,
@@ -125,7 +128,7 @@ class Horarios extends Component {
                     (this.state.ciaID !== 'metropolitano') ?
                     <TableRow>
                       <TableCell colSpan="2" className={classes.centered}>
-                        <Link to={'/app/itinerario/'+this.state.ciaID+'/'+this.state.linha+'/'+this.state.trajeto}>
+                        <Link to={'/app/itinerario/'+this.state.ciaID+'/'+this.state.linha+'/'+this.state.trajeto} className={classes.link}>
                           <Button disabled={!this.state.linha} variant="raised" color="secondary">
                             Itinerário
                           </Button>
@@ -159,7 +162,7 @@ class Horarios extends Component {
                     (this.state.ciaID !== 'metropolitano') ?
                     <TableRow>
                       <TableCell colSpan="2" className={classes.centered}>
-                        <Link to={'/app/itinerario/'+this.state.ciaID+'/'+this.state.linha+'/'+this.state.trajeto}>
+                        <Link to={'/app/itinerario/'+this.state.ciaID+'/'+this.state.linha+'/'+this.state.trajeto} className={classes.link}>
                           <Button disabled={!this.state.linha} variant="raised" color="secondary">
                             Itinerário
                           </Button>
@@ -193,7 +196,7 @@ class Horarios extends Component {
                     (this.state.ciaID !== 'metropolitano') ?
                     <TableRow>
                       <TableCell colSpan="2" className={classes.centered}>
-                        <Link to={'/app/itinerario/'+this.state.ciaID+'/'+this.state.linha+'/'+this.state.trajeto}>
+                        <Link to={'/app/itinerario/'+this.state.ciaID+'/'+this.state.linha+'/'+this.state.trajeto} className={classes.link}>
                           <Button disabled={!this.state.linha} variant="raised" color="secondary">
                             Itinerário
                           </Button>
