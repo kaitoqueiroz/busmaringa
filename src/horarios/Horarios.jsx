@@ -19,10 +19,6 @@ function TabContainer({ children, dir }) {
 }
 
 const styles = theme => ({
-  container: {
-    height: 'calc(100vh - 50px)',
-    overflow: 'auto',
-  },
   hidden: {
     display: 'none'
   },
@@ -93,7 +89,7 @@ class Horarios extends Component {
   render() {
     const { classes } = this.props;
     return (
-        <Paper className={classes.container} elevation={4}>
+        <Paper elevation={4}>
           <AppBar position="static" color="default">
             <Tabs
               value={this.state.value}
