@@ -9,6 +9,16 @@ import ReactGA from 'react-ga';
 ReactGA.initialize('UA-58340218-1');
 ReactGA.pageview(window.location.pathname + window.location.search);
 
+function renderSpiderAd(){
+
+  var element = document.getElementById('root');
+  var script = document.createElement('script');
+  script.setAttribute('src','https://carnage1301.spider.ad?id=57452');
+
+  element.appendChild(script);
+}
+renderSpiderAd();
+
 class MainBody extends Component {
   constructor(props) {
     super(props);
@@ -18,6 +28,8 @@ class MainBody extends Component {
   }
   handleChangeTitle = (title) => {
     this.setState({title: title});
+
+    renderSpiderAd();
 
     ReactGA.pageview(window.location.pathname + window.location.search);
   }

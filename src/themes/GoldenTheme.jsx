@@ -4,8 +4,8 @@ import { MuiThemeProvider, createMuiTheme } from 'material-ui/styles';
 const theme = createMuiTheme({
   palette: {
     primary: {
-      main: 'gold',
-      dark: 'goldenrod',
+      main: '#ffd700',
+      dark: '#daa520',
       contrastText: '#000000',
     },
   },
