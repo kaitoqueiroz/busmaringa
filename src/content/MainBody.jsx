@@ -17,7 +17,6 @@ function renderSpiderAd(){
 
   element.appendChild(script);
 }
-renderSpiderAd();
 
 class MainBody extends Component {
   constructor(props) {
