@@ -9,6 +9,7 @@ import SwipeableViews from 'react-swipeable-views';
 import Typography from 'material-ui/Typography';
 import Button from 'material-ui/Button';
 import { Link } from 'react-router-dom';
+import GreenTheme from './../themes/GreenTheme.jsx';
 
 function TabContainer({ children, dir }) {
   return (
@@ -123,11 +124,24 @@ class Horarios extends Component {
                   {
                     (this.state.ciaID !== 'metropolitano') ?
                     <TableRow>
-                      <TableCell colSpan="2" className={classes.centered}>
+                      <TableCell className={classes.centered}>
                         <Link to={'/app/itinerario/'+this.state.ciaID+'/'+this.state.linha+'/'+this.state.trajeto} className={classes.link}>
                           <Button disabled={!this.state.linha} variant="raised" color="secondary">
                             Itinerário
                           </Button>
+                        </Link>
+                      </TableCell>
+                      <TableCell className={classes.centered}>
+                        <Link to={'/app/trajeto/'+this.state.ciaID+'/'+this.state.linha+'/'+this.state.trajeto} className={classes.link}>
+                          <GreenTheme>
+                            <Button disabled={!this.state.linha} variant="raised" color="primary">
+                            Trajeto &nbsp;
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                <path fill="#fff" d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                                <path d="M0 0h24v24H0z" fill="none"/>
+                            </svg>
+                            </Button>
+                          </GreenTheme>
                         </Link>
                       </TableCell>
                     </TableRow>

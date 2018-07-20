@@ -4,3 +4,13 @@ body {
   font-family: sans-serif;
   background-color: #fafafa;
 }
+.leaflet-right {display: none}
+
+.hidden {display: none}
+.stop-bus-marker {
+	margin-left: 0 !important;
+	margin-top: -10px !important;
+	top: -30px !important;
+	left: -25px !important;
+	padding: 10px
+}

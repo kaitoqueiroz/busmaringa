@@ -5,18 +5,10 @@ import Principal from './../principal/Principal.jsx';
 import MenuAppBar from './../menu/MenuAppBar.jsx';
 import Horarios from './../horarios/Horarios.jsx';
 import Itinerario from './../itinerario/Itinerario.jsx';
+import Trajeto from './../itinerario/Trajeto.jsx';
 import ReactGA from 'react-ga';
 ReactGA.initialize('UA-58340218-1');
 ReactGA.pageview(window.location.pathname + window.location.search);
-
-function renderSpiderAd(){
-
-  var element = document.getElementById('root');
-  var script = document.createElement('script');
-  script.setAttribute('src','https://carnage1301.spider.ad?id=57452');
-
-  element.appendChild(script);
-}
 
 class MainBody extends Component {
   constructor(props) {
@@ -27,8 +19,6 @@ class MainBody extends Component {
   }
   handleChangeTitle = (title) => {
     this.setState({title: title});
-
-    renderSpiderAd();
 
     ReactGA.pageview(window.location.pathname + window.location.search);
   }
@@ -50,6 +40,9 @@ class MainBody extends Component {
             )}/>
             <Route path="/app/itinerario/:ciaID/:linha/:trajeto" render={(props) => (
               <Itinerario {...props} changeTitle={this.handleChangeTitle}/>
+            )}/>
+            <Route path="/app/trajeto/:ciaID/:linha/:trajeto" render={(props) => (
+              <Trajeto {...props} changeTitle={this.handleChangeTitle}/>
             )}/>
           </div>
         </Router>
