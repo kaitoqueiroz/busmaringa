@@ -63,11 +63,11 @@ class Trajeto extends Component {
     });
     console.log(itinerario);
 
-    var latlngs = [];
+    // var latlngs = [];
 
     itinerario.forEach(function(item){
       waypoints.push(L.latLng(item[1], item[2]));
-      latlngs.push([item[1], item[2]]);
+      // latlngs.push([item[1], item[2]]);
 
       L.marker(
         [
@@ -81,23 +81,23 @@ class Trajeto extends Component {
         attribution: '<a href="http://openstreetmap.org">OpenStreetMap</a>',
     }).addTo(map);
     
-    var polyline = L.polyline(latlngs, {color: 'red'}).addTo(map);
+    // var polyline = L.polyline(latlngs, {color: 'red'}).addTo(map);
     // zoom the map to the polyline
-    map.fitBounds(polyline.getBounds());
+    // map.fitBounds(polyline.getBounds());
 
-    // var control = L.Routing.control({
-    //   routeWhileDragging: false,
-    //   draggableWaypoints: false,
-    //   waypointMode: 'snap',
-    //   show: true,
-    //   addWaypoints: false,
-    //   waypoints: waypoints,
-    //   lineOptions: {
-    //     styles: [{color: 'red', opacity: 0.6, weight: 6}]
-    //   }
-    // }).addTo(map);
+    var control = L.Routing.control({
+      routeWhileDragging: false,
+      draggableWaypoints: false,
+      waypointMode: 'snap',
+      show: true,
+      addWaypoints: false,
+      waypoints: waypoints,
+      lineOptions: {
+        styles: [{color: 'red', opacity: 0.6, weight: 6}]
+      }
+    }).addTo(map);
 
-    // control.hide();
+    control.hide();
 
     waypoints = [];
 
