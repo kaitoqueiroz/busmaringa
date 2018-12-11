@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/busmaringa/precache-manifest.fac2e85a57f765b0bdd658c24ca3f286.js"
+  "/busmaringa/precache-manifest.6c7388a573383aea57ed41eb6b237212.js"
 );
 
 workbox.clientsClaim();
